@@ -8,8 +8,6 @@ describe('HelloWorld.vue', () => {
 
     wrapper.setData({ msg });
 
-    wrapper.vm.$forceUpdate();
-
     expect(wrapper.contains('h1')).toBe(true);
   })
 });
