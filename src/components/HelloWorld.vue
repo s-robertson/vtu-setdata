@@ -4,7 +4,7 @@
       v-model="msg"
       type="text">
     <h1 v-if="hasMessage">
-      {{ msg }}
+      Test Heading
     </h1>
   </div>
 </template>

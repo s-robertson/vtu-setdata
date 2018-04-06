@@ -7,6 +7,9 @@ describe('HelloWorld.vue', () => {
     const wrapper = shallow(HelloWorld);
 
     wrapper.setData({ msg });
-    expect(wrapper.find('h1').text()).toMatch(msg);
+
+    wrapper.vm.$forceUpdate();
+
+    expect(wrapper.contains('h1')).toBe(true);
   })
 });
